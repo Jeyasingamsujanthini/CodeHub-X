@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note</title>
+    <style>
+        /* Basic styling for the notepad */
+        *{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*header section */
+
+        header{
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+            border-bottom: 1px solid black; 
+            box-shadow: 5px 0px 10px;
+    
+        }
+        .logo{
+            width: 150px;
+            display: flex;
+            justify-content: center;
+        }
+        .logo_span{
+            color: brown;
+        }
+        .sub_header{
+            margin-right: 0px ;
+            display: flex;
+            justify-content:space-between ;
+            align-items: center;
+        }
+        .sub_header_items{
+            padding-bottom:5px;
+            padding-left:15px;
+            padding-right: 15px;
+ 
+        }
+
+        .sub_header_items>a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .sub_header_items:hover{
+            border-bottom:2px solid brown;
+            transition-duration: 0s;
+            transition: all 0.15s linear;
+        }
+
+        /*body*/
+        
+        h1{
+            width: 284px; 
+            height: 43px; 
+            left: 500px; 
+            top: 136px; 
+            position: absolute; 
+            color: black; 
+            font-size: 24px; 
+            font-family: Inter; 
+            font-weight: 400; 
+            word-wrap: break-word ; 
+        }
+        .notepad {
+          border: 1px solid #ccc;
+          margin-left: 300px;
+          margin-top: 50px;
+          margin-bottom: 200px;
+          width: 300px;
+          padding: 200px;
+          min-height: 500px;
+          background-image: url(notebook-page-notebook-paper-cute-notebook-paper-template-cute-notebook-cover-open-notebook-spiral-wire-notebook-notebook-paper-notes-blank-notebook-thumbnail.png) ;
+          background-size:700px;
+        }
+        .notepad textarea {
+          width: 140%;
+          height: 200%;
+          font-size: 20px;
+          margin-right: 800px;
+        }
+        button {
+           width: 75px;
+           height: 38px;
+           left: 1100px;
+           top: 800px;
+           position: absolute;
+           color: rgb(9, 9, 9);
+           font-size: 24px;
+           font-weight: 400;
+           cursor: pointer;
+           background: rgb(68, 205, 229);
+            
+        }
+        
+
+
+        /* footer section */
+        footer{
+            width: 100%;
+            height: 40vh;
+            background-color: black;
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            color: #fff;
+
+        }
+        .about{
+            margin: 10px 40px;
+        }
+        .about>ul{
+            list-style: none;
+        }
+        .about>ul>li{
+            padding: 7px 0px;
+        }
+        .about>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+        /* col-02 */
+        .col-02>ul{
+            list-style: none;
+        }
+        .col-02>ul>li{
+            padding: 7px 0px ;
+        }
+        .col-02>ul>li>a{
+            color: white;
+            text-decoration: none;
+        }
+
+        /* col-03 */
+
+        .col-03>ul{
+            list-style: none;
+        }
+        .col-03>ul>li{
+            padding: 7px 0px;
+        }
+        .col-03>ul>li>a{
+            color: red;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Tax<span class="logo_span">Fix</span></h2>
+        </div>
+        
+        <div class="sub_header">
+        <div class="sub_header_items"> <a href="index.html">HOME</a></div>
+        <div class="sub_header_items">  <a href="">CALCULATOR</a></div>
+        <div class="sub_header_items">  <a href="news.html">NEWS</a>
+            
+            <!--
+            <a>Calculator</a>
+            <a>NEWS</a>
+            <a>article</a>
+            <a>Ask With Expert</a>
+            <a>Set Reminder </a>
+            --></div>
+        <div class="sub_header_items">  <a href="article.html">ARTICLE</a></div>
+
+        
+        <div class="sub_header_items"><a href="sign-up_page.html">REGISTER</a></div>
+      
+    </header>
+
+
+    <h1>Take Your Own Notes</h1>
+    <div style="width: 349px; height: 0px; left: 435px; top: 179.01px; position: absolute; border: 2px #BD0000 solid"></div>
+    <div class="notepad">
+        <textarea id="notepad-text" placeholder="Write your notes here..."></textarea>
+    </div>
+
+    <img style="width: 500px; height: 600px; left: 1050px; top: 120px; position: absolute; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)" src="img-01.jpg" />
+    <button type="submit">Save</button>
+    <button type="button" style="width: 75px;height: 38px;left: 1250px;top: 800px;position: absolute;color: rgb(9, 9, 9);font-size: 20px;font-weight: 400;cursor: pointer;background: rgb(68, 205, 229);">Delete</button>
+    <button type="button" style="width: 75px;height: 38px;left: 1100px;top: 875px;position: absolute;color: rgb(9, 9, 9);font-size: 20px;font-weight: 400;cursor: pointer;background: rgb(68, 205, 229);">Un Do</button>
+    <button type="button" style="width: 75px;height: 38px;left: 1250px;top: 875px;position: absolute;color: rgb(9, 9, 9);font-size: 20px;font-weight: 400;cursor: pointer;background: rgb(68, 205, 229);">Re Do</button>
+    <button type="button" style="width: 120px;height: 38px;left: 1150px;top: 950px;position: absolute;color: rgb(9, 9, 9);font-size: 20px;font-weight: 400;cursor: pointer;background: rgb(68, 205, 229);">Refference</button>
+
+
+     <!--footer section-->       
+        
+    <footer>
+        <div col-1>
+            <div class="logo">
+                <h2>Tax<span class="logo_span">Fix</span></h2>
+            </div>
+            <div class="about">
+                <ul>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Our Services</a>
+                    </li>
+                    <li>
+                        <a href="">Privcy Policy</a>
+                    </li> 
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                       
+                </ul>
+            </div>
+
+
+        </div>
+
+            <div class="col-02">
+               <ul>
+                <li><a href="">News</a></li>
+                <li><a href="">Article</a></li>
+                <li><a href="">Reminder</a></li>
+                <li><a href="">Calculate</a></li>
+                <li><a href="">Ask with Exppert</a></li>
+               </ul>
+
+            </div>
+            <div class="col-03">
+                <ul>
+                    <li><h2>Contact Us</h2></li>
+                    <li><a href="">Link01</a></li>
+                    <li><a href="">Link02</a></li>
+                    <li><a href="">Link03</a></li>
+                </ul>
+
+            </div>
+    </footer>
+
+
+</body>
+</html>
+
+
