@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .calculator input, .calculator select, .calculator button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Income Tax Calculator</h2>
+        <label for="income">Annual Income:</label>
+        <input type="number" id="income" placeholder="Enter your annual income">
+        
+        <label for="taxYear">Tax Year:</label>
+        <select id="taxYear">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <!-- Add more tax years as needed -->
+        </select>
+        
+        <button onclick="calculateTax()">Calculate Tax</button>
+        
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        function calculateTax() {
+            const income = parseFloat(document.getElementById('income').value);
+            const taxYear = document.getElementById('taxYear').value;
+            let tax = 0;
+
+            if (isNaN(income) || income <= 0) {
+                document.getElementById('result').innerText = 'Please enter a valid income amount.';
+                return;
+            }
+
+            if (taxYear === '2023') {
+                tax = calculateTaxFor2023(income);
+            } else if (taxYear === '2024') {
+                tax = calculateTaxFor2024(income);
+            }
+
+            document.getElementById('result').innerText = `Your estimated tax for ${taxYear} is LKR${tax.toFixed(2)}.`;
+        }
+
+        function calculateTaxFor2023(income) {
+            // Example tax brackets for 2023
+            if (income <= 120000) {
+                tax = 0.0;
+            } else if (income > 120000 && income <= 170000) {
+                tax = (income - 120000) * 0.06;
+            } else if (income > 170000 && income <= 220000) {
+                tax = (income - 170000) * 0.12 + 30000.0;
+            } else if (income > 220000 && income <= 270000) {
+                tax = (income - 2200000) * 0.18 + 90000.0;
+            } else if (income > 270000 && income <= 320000) {
+                tax = (income - 270000) * 0.24 + 180000.0;
+            } else if (income > 320000 && income <= 370000) {
+                tax = (income - 320000) * 0.3 + 300000.0;
+            } else if (income > 370000) {
+                tax = (income - 370000) * 0.36 + 450000.0;
+            }
+        }
+
+        function calculateTaxFor2024(income) {
+            // Example tax brackets for 2024
+            if (income <= 1200000) {
+                return income * 0.12;
+            } else if (income <= 6000000 && income >=1200000) {
+                return 1200000 * 0.12 + (income - 1200000) * 0.22;
+            } else {
+                return 1200000 * 0.12 + 4800000 * 0.22 + (income - 6000000) * 0.32;
+            }
+        }
+    </script>
+</body>
+</html>
