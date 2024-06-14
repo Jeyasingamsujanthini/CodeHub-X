@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header section */
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  box-shadow: 5px 0px 10px;
+}
+.logo {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+.logo_span {
+  color: brown;
+}
+.sub_header {
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_header_items {
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sub_header_items > a {
+  text-decoration: none;
+  color: black;
+}
+
+.sub_header_items:hover {
+  border-bottom: 2px solid brown;
+  transition-duration: 0s;
+  transition: all 0.15s linear;
+}
+
+/* calculator section */
+.calculator {
+  max-width: 80%;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: solid brown;
+}
+
+label {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #355fd2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3a91d8;
+}
+
+#result {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+table {
+  width: 100%;
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #0c0000;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #51c531;
+}
+
+/* footer section */
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+.about {
+  margin: 10px 40px;
+}
+.about > ul {
+  list-style: none;
+}
+.about > ul > li {
+  padding: 7px 0px;
+}
+.about > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+/* col-02 */
+.col-02 > ul {
+  list-style: none;
+}
+.col-02 > ul > li {
+  padding: 7px 0px;
+}
+.col-02 > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* col-03 */
+
+.col-03 > ul {
+  list-style: none;
+}
+.col-03 > ul > li {
+  padding: 7px 0px;
+}
+.col-03 > ul > li > a {
+  color: red;
+}
