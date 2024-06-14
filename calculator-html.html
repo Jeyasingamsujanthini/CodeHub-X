@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    
+    <link rel="stylesheet" href="calcutor-sryle.css">
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <h2>Tax<span class="logo_span">Fix</span></h2>
+        </div>
+        
+        <div class="sub_header">
+        <div class="sub_header_items"> <a href="index.html">HOME</a></div>
+
+        <div class="sub_header_items">  <a href="news.html">NEWS</a></div>
+              <div class="sub_header_items">  <a href="Reminder.html">REMINDER</a></div> 
+            <!--
+            <a>Calculator</a>
+            <a>NEWS</a>
+            <a>article</a>
+            <a>Ask With Expert</a>
+            <a>Set Reminder </a>
+            -->
+        <div class="sub_header_items">  <a href="article.html">ARTICLE</a></div>
+
+        
+        <div class="sub_header_items"><a href="">LOG IN</a></div>
+      
+        </header>
+
+<div class="calculator">
+  <h2>Income Tax Calculator</h2>
+  <label for="income">Enter Annual (payable)Income (LKR):</label>
+  <input type="number" id="income" placeholder="Enter your annual income">
+  <button onclick="calculateTax()">Calculate Tax</button>
+  <div id="result"></div>
+  <div id="result-02"></div>
+  <table id="taxTable">
+    <tr>
+      <th>Income Range (LKR)</th>
+      <th>Tax Rate</th>
+    </tr>
+    <tr>
+      <td>1st 1.2 moilion</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>2nd 500,000</td>
+      <td>6%</td>
+    </tr>
+    <tr>
+      <td>3rd 500,000</td>
+      <td>12%</td>
+    </tr>
+    <tr>
+      <td>4th 500,000</td>
+      <td>18%</td>
+    </tr>
+    <tr>
+      <td>5th 500,000</td>
+      <td>24%</td>
+    </tr>
+    <tr>
+      <td>6th 500,000</td>
+      <td>30%</td>
+    </tr>
+    <tr>
+      <td>above 500,000</td>
+      <td>36%</td>
+    </tr>
+  </table>
+</div>
+<script src="calculator-scpt.js"></script>
+
+
+<!-- footer section -->
+<footer>
+  <div col-1>
+      <div class="logo">
+          <h2>Tax<span class="logo_span">Fix</span></h2>
+      </div>
+      <div class="about">
+          <ul>
+              <li>
+                  <a href="">About Us</a>
+              </li>
+              <li>
+                  <a href="">Our Services</a>
+              </li>
+              <li>
+                  <a href="">Privcy Policy</a>
+              </li> 
+              <li>
+                  <a href="">Help</a>
+              </li>
+                 
+          </ul>
+      </div>
+
+
+  </div>
+
+      <div class="col-02">
+         <ul>
+          <li><a href="">News</a></li>
+          <li><a href="">Article</a></li>
+          <li><a href="">Reminder</a></li>
+          <li><a href="">Calculate</a></li>
+          <li><a href="">Ask with Exppert</a></li>
+         </ul>
+
+      </div>
+      <div class="col-03">
+          <ul>
+              <li><h2>Contact Us</h2></li>
+              <li><a href="">Link01</a></li>
+              <li><a href="">Link02</a></li>
+              <li><a href="">Link03</a></li>
+          </ul>
+
+      </div>
+</footer>
+
+
+</body>
+</html>
